@@ -1,0 +1,121 @@
+/* CSS Document */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Container */
+  .container {
+    max-width: 600px;
+      margin: auto;
+  }
+  /* Headerbereich */
+  .columnheader {
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .rowheader {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .rowheader:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Columns */
+  
+  /* Float four columns side by side */
+  .column {
+    display: table;
+    float: left;
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {
+      margin: 0 -5px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color:#CDCDCD;
+  }
+  
+  .compendio {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color:#9EA9EB;
+  }
+  
+  .akad {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #95DC98
+  }
+  
+  /* Karteninhalte stylen */
+  
+  .logo {
+      height: 300px;
+      line-height: 300px;
+      vertical-align: middle;
+      text-align: center;
+  }
+  .titel {
+      height: 60px;
+      vertical-align: middle;
+      text-align: center;
+  }
+  .text {
+      height: 100px;
+      vertical-align: middle;
+      text-align: center;
+  }
+  .link {
+      height: 60px;
+      vertical-align: middle;
+      text-align: center;
+  }
+  
+  img {
+      vertical-align: middle;
+      max-width: 300px;
+      max-height: 300px;
+  }
+  
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
